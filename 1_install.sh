@@ -17,6 +17,7 @@
 
 ##################################################
 # install ROS 
+cd ~/
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt install curl # if you haven't already installed curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
@@ -35,6 +36,7 @@ echo -e "\n run 'roscore' to confirm ROS proper work \n"
 
 ##################################################
 # install ros-optitrack plugin
+cd ~/
 echo -e "\n install mocap-optitrack ROS plugin \n"
 # if you are not using ROS Noetic, change ros-"ROS_YOUR_VERSION_NAME"-mocap-optitrack
 sudo apt install ros-noetic-mocap-optitrack
@@ -43,16 +45,19 @@ sudo apt install ros-noetic-mocap-optitrack
 # install Mission Planner
 # https://ardupilot.org/planner/docs/mission-planner-installation.html#mission-planner-on-linux
 # https://www.mono-project.com/download/stable/
+cd ~/
 echo -e "\n install Mission Planner \n"
+echo -e "\n You need to install Mission Planner from here  https://firmware.ardupilot.org/Tools/MissionPlanner/MissionPlanner-latest.zip \n"
 sudo apt install gnupg ca-certificates
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
 sudo apt update
 ##################################################
 # install mono 
+cd ~/
 echo -e "\n install mono \n"
 sudo apt install mono-devel
-mono MissionPlanner/MissionPlanner.exe
+# mono MissionPlanner/MissionPlanner.exe
 
 ##################################################
 # install Gazebo
@@ -66,6 +71,7 @@ sudo apt-get install gazebo11
 
 ##################################################
 # install Ardupilot
+cd ~/
 echo -e "\n install Ardupilot \n"
 sudo apt-get update
 sudo apt-get install git
