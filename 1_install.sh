@@ -8,7 +8,10 @@
 # - mono
 # - Gazebo
 # - Ardupilot
-
+#################
+# run command below
+# ./1_install.sh
+#################
 
 ##################################################
 # install ROS 
