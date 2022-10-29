@@ -20,6 +20,7 @@ alias sitl_init='cd ~/ardupilot/ArduCopter && sim_vehicle.py --wipe-eeprom'
 # run SITL
 # --custom-location=latitude,longitude,altitude,direction
 alias sitl='cd ~/ardupilot/ArduCopter && sim_vehicle.py --console --frame=X --custom-location=33.595270,130.215496,13,353 --map'
+alias sitl_debug='cd ~/ardupilot/ArduCopter && sim_vehicle.py -v ArduCopter -f quad --console --map -D'
 alias gazebo_ardu='cd ~/ardupilot/ArduCopter && sim_vehicle.py -f gazebo-iris --console --map'
 # Simulation in Kyushu university
 alias gazebo_ardu_kyudai='cd ~/ardupilot/ArduCopter && sim_vehicle.py -f gazebo-iris --console --custom-location=33.595270,130.215496,13,353 --map'
