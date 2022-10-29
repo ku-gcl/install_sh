@@ -48,14 +48,29 @@ sudo apt install ros-noetic-mocap-optitrack
 cd ~/
 echo -e "\n install Mission Planner \n"
 echo -e "\n You need to install Mission Planner from here  https://firmware.ardupilot.org/Tools/MissionPlanner/MissionPlanner-latest.zip \n"
+
+# 以下のURLからMission PlannerのzipファイルをDownloadsフォルダにダウンロード
+cd ~/Downloads
+wget https://firmware.ardupilot.org/Tools/MissionPlanner/MissionPlanner-latest.zip
+# zipファイルを解凍する
+# 以下の記事より、文字化けを防ぐため、zipファイルの解凍にはunarを使用する。
+# https://qiita.com/supersaiakujin/items/c6b54e9add21d375161f
+sudo apt install unar
+# HOME directoryでzipを解凍
+cd ~/
+unar ~/Downloads/MissionPlanner-latest.zip
+# MissionPlanner-latestというフォルダが作成される。
+# MissionPlannerというフォルダ名に変更
+mv ~/MissionPlanner-latest ~/MissionPlanner
+
+##################################################
+# install mono 
+echo -e "\n install mono \n"
 sudo apt install gnupg ca-certificates
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
 sudo apt update
-##################################################
-# install mono 
 cd ~/
-echo -e "\n install mono \n"
 sudo apt install mono-devel
 # mono MissionPlanner/MissionPlanner.exe
 
