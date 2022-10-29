@@ -16,9 +16,15 @@ alias mission='mono ~/MissionPlanner/MissionPlanner.exe'
 
 # initialize SITL (Software in the loop)
 alias sitl_init='cd ~/ardupilot/ArduCopter && sim_vehicle.py --wipe-eeprom'
+
+# run SITL
 # --custom-location=latitude,longitude,altitude,direction
 alias sitl='cd ~/ardupilot/ArduCopter && sim_vehicle.py --console --frame=X --custom-location=33.595270,130.215496,13,353 --map'
-alias gazebo_copter='gazebo --verbose worlds/iris_arducopter_runway.world'
-alias ardu_gazebo='cd ~/ardupilot/ArduCopter && sim_vehicle.py -f gazebo-iris --console --map'
-alias process_check_gazebo='ps aux | grep gzserver'
+alias gazebo_ardu='cd ~/ardupilot/ArduCopter && sim_vehicle.py -f gazebo-iris --console --map'
+# Simulation in Kyushu university
+alias gazebo_ardu_kyudai='cd ~/ardupilot/ArduCopter && sim_vehicle.py -f gazebo-iris --console --custome-location=33.595270,130.215496,13,353 --map'
+gazebo_copter='gazebo --verbose worlds/iris_arducopter_runway.world'
+
+# Gazebo util
+alias gazebo_process_check='ps aux | grep gzserver'
 alias gazebo_kill='killall -9 gzserver'
