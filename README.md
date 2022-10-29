@@ -19,5 +19,12 @@ Ubuntuをインストールしたときに、シミュレーション環境や�
 # shファイルに実行権限を付与する
 
 ```.bash
+# bash
 chmod 755 ./1_install.sh
+```
+# shファイルを実行する
+
+```.bash
+# bash
+./1_install.sh
 ```
