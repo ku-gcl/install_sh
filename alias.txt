@@ -1,0 +1,24 @@
+# after add command, run "source ~/.bashrc"
+alias edit_command='code ~/.bashrc'
+alias add_command='source ~/.bashrc'
+
+# Set ROS alias command
+# No space between cm='command'
+alias cw='cd ~/catkin_ws'
+alias cs='cd ~/catkin_ws/src'
+alias cm='cd ~/catkin_ws && catkin_make'
+alias copter='cd /home/drone02/ardupilot/ArduCopter'
+alias roscore_kill='killall -9 roscore && killall -9 rosmaster'
+alias roscore_find='ps aux | grep ros'
+
+# run Mission Planner
+alias mission='mono ~/MissionPlanner/MissionPlanner.exe'
+
+# initialize SITL (Software in the loop)
+alias sitl_init='cd ~/ardupilot/ArduCopter && sim_vehicle.py --wipe-eeprom'
+# --custom-location=latitude,longitude,altitude,direction
+alias sitl='cd ~/ardupilot/ArduCopter && sim_vehicle.py --console --frame=X --custom-location=33.595270,130.215496,13,353 --map'
+alias gazebo_copter='gazebo --verbose worlds/iris_arducopter_runway.world'
+alias ardu_gazebo='cd ~/ardupilot/ArduCopter && sim_vehicle.py -f gazebo-iris --console --map'
+alias process_check_gazebo='ps aux | grep gzserver'
+alias gazebo_kill='killall -9 gzserver'

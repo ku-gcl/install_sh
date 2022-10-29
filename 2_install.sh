@@ -1,3 +1,4 @@
+#!/bin/bash
 ##################################################
 # install app index
 # - GAZEBO-ardupilot-gazebo
