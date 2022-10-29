@@ -47,9 +47,9 @@ sudo apt install ros-noetic-mocap-optitrack
 # https://www.mono-project.com/download/stable/
 cd ~/
 echo -e "\n install Mission Planner \n"
-echo -e "\n You need to install Mission Planner from here  https://firmware.ardupilot.org/Tools/MissionPlanner/MissionPlanner-latest.zip \n"
-
-# 以下のURLからMission PlannerのzipファイルをDownloadsフォルダにダウンロード
+echo -e "\n Installing Mission Planner from here -> https://firmware.ardupilot.org/Tools/MissionPlanner/MissionPlanner-latest.zip \n"
+# 以下のURLからMission Plannerのzipファイルをダウンロード。
+# Downloadsフォルダに保存
 cd ~/Downloads
 wget https://firmware.ardupilot.org/Tools/MissionPlanner/MissionPlanner-latest.zip
 # zipファイルを解凍する
