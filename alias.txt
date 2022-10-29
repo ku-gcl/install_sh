@@ -23,7 +23,7 @@ alias sitl='cd ~/ardupilot/ArduCopter && sim_vehicle.py --console --frame=X --cu
 alias gazebo_ardu='cd ~/ardupilot/ArduCopter && sim_vehicle.py -f gazebo-iris --console --map'
 # Simulation in Kyushu university
 alias gazebo_ardu_kyudai='cd ~/ardupilot/ArduCopter && sim_vehicle.py -f gazebo-iris --console --custom-location=33.595270,130.215496,13,353 --map'
-gazebo_copter='gazebo --verbose worlds/iris_arducopter_runway.world'
+alias gazebo_copter='gazebo --verbose worlds/iris_arducopter_runway.world'
 
 # Gazebo util
 alias gazebo_process_check='ps aux | grep gzserver'
