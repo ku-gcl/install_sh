@@ -14,4 +14,10 @@ Ubuntuをインストールしたときに、シミュレーション環境や�
 - Ardupilotのビルド内容を反映するため一旦再起動
 
 - 2_install.sh
-    - GAZEBO-ardupilot-gazebo
+    - GAZEBO-ardupilot-ga
+    
+# shファイルに実行権限を付与する
+
+```.bash
+chmod 755 ./1_install.sh
+```
