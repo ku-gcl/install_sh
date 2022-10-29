@@ -33,6 +33,8 @@ git clone https://github.com/ku-gcl/install_sh.git
 
 ```.bash
 # bash
+# install_shフォルダに移動
+cd ~/install_sh
 chmod 755 ./1_install.sh
 chmod 755 ./2_install.sh
 ```
