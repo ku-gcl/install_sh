@@ -5,15 +5,21 @@ Ubuntuをインストールしたときに、シミュレーション環境や�
 - 1_install.sh
     - ROS
     - ROS-mocap-optitrack
+        - OptiTrackでのセンシング情報をROSで配信するためのPlugin
     - Mission Planner
+        - Pixhawkへの書き込み、Pixhawkからのセンシング情報の取得をするためのアプリ
     - mono
+        - Linuxでexeファイルを実行するためのアプリ
     - Gazebo
+        - ロボットを3次元空間に描画するアプリ
     - Ardupilot
+        - Pixhawkに搭載するフライトコード
 
-- Ardupilotのビルド内容を反映するため一旦再起動
+- 1_install.shが終了した後、Ardupilotのビルド内容を反映するため一旦再起動する。
 
 - 2_install.sh
-    - GAZEBO-ardupilot-ga
+    - gazebo-ardupilot
+        - GazeboとArdupilotを連携するためのPlugin
 
 # コードのダウンロード
 GitHubから以下のコマンドでクローン（ダウンロード）する。
