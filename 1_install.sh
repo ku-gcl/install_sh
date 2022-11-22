@@ -12,6 +12,10 @@
 # run command below
 # chmod 755 ./1_install.sh
 # ./1_install.sh
+
+# or 
+
+# source 1_install.sh
 # https://qiita.com/Lambda34/items/7d24ebe6f7bde5bedddc
 #################
 
