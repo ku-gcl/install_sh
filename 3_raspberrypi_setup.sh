@@ -33,9 +33,20 @@ echo -e "\n run 'roscore' to confirm ROS proper work \n"
 
 ##################################################
 # install MAVROS
+echo -e "\n install mavros ROS plugin \n"
 sudo apt-get install -y ros-noetic-mavros ros-noetic-mavros-extras
 wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh chmod a+x install_geographiclib_datasets.sh 
 sudo ./install_geographiclib_datasets.sh
+
+
+
+##################################################
+# install ros-optitrack plugin
+cd ~/
+echo -e "\n install mocap-optitrack ROS plugin \n"
+# if you are not using ROS Noetic, change ros-"ROS_YOUR_VERSION_NAME"-mocap-optitrack
+sudo apt install -y ros-noetic-mocap-optitrack
+
 
 
 # install custom code ##################################################

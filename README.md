@@ -9,7 +9,7 @@ Ubuntu をインストールしたときに、シミュレーション環境や�
 | No. | ファイル名   | インストール内容    | 説明                                                                       |
 | :-: | :----------- | :------------------ | :------------------------------------------------------------------------- |
 |  1  | 1_install.sh | ROS Noetic          | ROS                                                                        |
-|     |              | ROS-mocap-optitrack | OptiTrack でのセンシング情報を ROS で配信するための Plugin                 |
+|     |              | ros-mocap-optitrack | OptiTrack でのセンシング情報を ROS で配信するための Plugin                 |
 |     |              | Mission Planner     | Pixhawk への書き込み、Pixhawk からのセンシング情報の取得をするためのアプリ |
 |     |              | mono                | Linux で exe ファイルを実行するためのアプリ                                |
 |     |              | Gazebo              | ロボットを 3 次元空間に描画するアプリ                                      |
@@ -20,6 +20,7 @@ Ubuntu をインストールしたときに、シミュレーション環境や�
 |     |              | px4_sim_pkg         | ミッションを定義した自作コード                                             |
 |  3  | 3_install.sh | VSCode              | コードエディタ                                                             |
 |     |              | ROS Noetic          | ROS                                                                        |
+|     |              | ros-mocap-optitrack | OptiTrack でのセンシング情報を ROS で配信するための Plugin                 |
 |     |              | mavros              | フライトコードへの API を提供する Plugin                                   |
 |     |              | px4_sim_pkg         | ミッションを定義した自作コード                                             |
 
