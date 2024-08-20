@@ -24,7 +24,19 @@ Ubuntu をインストールしたときに、シミュレーション環境や�
 |     |              | mavros              | フライトコードへの API を提供する Plugin                                   |
 |     |              | px4_sim_pkg         | ミッションを定義した自作コード                                             |
 
-## インストール手順
+## インストール手順ダイジェスト
+
+### Ubuntu PC
+
+1. [Ubuntu PC の場合](#ubuntu-pc-の場合)を実行
+1. [alias-の追加](#alias-の追加)を実行
+
+### Raspberry Pi
+
+1. [Raspberry Pi の場合](#raspberry-pi-の場合)を実行
+1. [alias-の追加](#alias-の追加)を実行
+
+## インストール手順詳細
 
 ### Ubuntu PC の場合
 
@@ -110,6 +122,8 @@ add_command
 # gazebo起動
 gazebo_copter
 ```
+
+## 参考
 
 ### VSCode の手動インストールの手順
 
