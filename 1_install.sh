@@ -19,6 +19,20 @@
 # https://qiita.com/Lambda34/items/7d24ebe6f7bde5bedddc
 #################
 
+
+##################################################
+# install dependent module
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install git
+sudo apt-get install gitk git-gui
+sudo apt-get install code       # vscodeをダウンロード
+
+
+# ダウンロードフォルダがなければ作成
+mkdir -p ~/Downloads
+
+
 ##################################################
 # install ROS 
 cd ~/
