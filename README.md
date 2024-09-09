@@ -6,23 +6,23 @@ Ubuntu をインストールしたときに、シミュレーション環境や�
 
 シェルスクリプト内で以下をダウンロードする。
 
-| No. | ファイル名   | インストール内容    | 説明                                                                       |
-| :-: | :----------- | :------------------ | :------------------------------------------------------------------------- |
-|  1  | 1_install.sh | ROS Noetic          | ROS                                                                        |
-|     |              | ros-mocap-optitrack | OptiTrack でのセンシング情報を ROS で配信するための Plugin                 |
-|     |              | Mission Planner     | Pixhawk への書き込み、Pixhawk からのセンシング情報の取得をするためのアプリ |
-|     |              | mono                | Linux で exe ファイルを実行するためのアプリ                                |
-|     |              | Gazebo              | ロボットを 3 次元空間に描画するアプリ                                      |
-|     |              | Ardupilot           | Pixhawk に搭載するフライトコード                                           |
-|     |              | VSCode              | コードエディタ                                                             |
-|  2  | 2_install.sh | gazebo_ardupilot    | Gazebo と Ardupilot を連携するための Plugin                                |
-|     |              | mavros              | フライトコードへの API を提供する Plugin                                   |
-|     |              | px4_sim_pkg         | ミッションを定義した自作コード                                             |
-|  3  | 3_install.sh | VSCode              | コードエディタ                                                             |
-|     |              | ROS Noetic          | ROS                                                                        |
-|     |              | ros-mocap-optitrack | OptiTrack でのセンシング情報を ROS で配信するための Plugin                 |
-|     |              | mavros              | フライトコードへの API を提供する Plugin                                   |
-|     |              | px4_sim_pkg         | ミッションを定義した自作コード                                             |
+| No. | ファイル名             | インストール内容    | 説明                                                                       |
+| :-: | :--------------------- | :------------------ | :------------------------------------------------------------------------- |
+|  1  | 1_install.sh           | ROS Noetic          | ROS                                                                        |
+|     |                        | ros-mocap-optitrack | OptiTrack でのセンシング情報を ROS で配信するための Plugin                 |
+|     |                        | Mission Planner     | Pixhawk への書き込み、Pixhawk からのセンシング情報の取得をするためのアプリ |
+|     |                        | mono                | Linux で exe ファイルを実行するためのアプリ                                |
+|     |                        | Gazebo              | ロボットを 3 次元空間に描画するアプリ                                      |
+|     |                        | Ardupilot           | Pixhawk に搭載するフライトコード                                           |
+|     |                        | VSCode              | コードエディタ                                                             |
+|  2  | 2_install.sh           | gazebo_ardupilot    | Gazebo と Ardupilot を連携するための Plugin                                |
+|     |                        | mavros              | フライトコードへの API を提供する Plugin                                   |
+|     |                        | px4_sim_pkg         | ミッションを定義した自作コード                                             |
+|  3  | 3_raspberrypi_setup.sh | VSCode              | コードエディタ                                                             |
+|     |                        | ROS Noetic          | ROS                                                                        |
+|     |                        | ros-mocap-optitrack | OptiTrack でのセンシング情報を ROS で配信するための Plugin                 |
+|     |                        | mavros              | フライトコードへの API を提供する Plugin                                   |
+|     |                        | px4_sim_pkg         | ミッションを定義した自作コード                                             |
 
 ## インストール手順ダイジェスト
 
